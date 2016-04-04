@@ -1,4 +1,4 @@
-gudubeth.github.io
-==================
+ozgurerdem.com
+==============
 
-content for gudubeth.com
+Content for ozgurerdem.com
