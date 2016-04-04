@@ -3,20 +3,20 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Gudubeth</title>
+    <title>Özgür Erdem</title>
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 	<style>
 		body {background-color:#333; background-repeat:no-repeat; background-size: cover; margin:0px; padding:0px; color:#fff; font-family:helvetica, arial}
-		
+
 		h1, h2, h3, p, ul, li {margin:0px; padding:0px;}
-		
+
 		.links ul{list-style:none}
 		.links li{font-size: 4em;font-weight:bold}
 		.links a{color:#fff; text-decoration:none; display: block; padding:0 10px; transition:padding-left .3s}
 		.links a:hover{background: #000; padding-left:30px}
-		
+
 		header, footer{position:fixed; font-size: .8em; bottom: 20px;}
 		header { left: 10px;}
 		header h1{font-size: 1em; color:#ccc; background:#000; padding: 5px;  }
@@ -24,14 +24,14 @@
 		footer a{color:#ccc; background:#000; padding: 5px;  text-decoration:none; transition:color .3s, background-color .3s}
 		footer a:hover{color:#000; background-color:#fff;}
 	</style>
-	
+
   </head>
   <body id="page">
     <div class="wrapper">
 		<header>
-			<h1>Gudubeth</h1>
+			<h1>Özgür Erdem Çınar</h1>
 		</header>
-		
+
 		<section class="links">
 			<ul>
 				<li><a href="https://github.com/gudubeth/">Github</a></li>
@@ -41,23 +41,23 @@
 				<li><a href="http://www.behance.net/gudubeth%E2%80%8E">Behance</a></li>
 			</ul>
 		</section>
-		
+
 		<footer id='footer'>
-			
+
 		</footer>
     </div>
 	<script>
 	(function(){
-		
+
 		var bgList = [
-			{	
-				bgUrl:'http://fc09.deviantart.net/fs70/f/2012/100/b/5/a_morning_in_lothlorien_25_by_dragoroth_stock-d4v7pqc.jpg', 
-				text:'"A Morning in Lothorien" by Dragoroth-stock', 
+			{
+				bgUrl:'http://fc09.deviantart.net/fs70/f/2012/100/b/5/a_morning_in_lothlorien_25_by_dragoroth_stock-d4v7pqc.jpg',
+				text:'"A Morning in Lothorien" by Dragoroth-stock',
 				link:'http://dragoroth-stock.deviantart.com/art/A-morning-in-Lothlorien-25-294292740'
 			},
-			{	
-				bgUrl:'http://fc02.deviantart.net/fs71/f/2013/299/4/0/_stock__mystic_woods_by_dominikaaniola-d2ehxq4.jpg', 
-				text:'"Mystic woods" by DominikaAniola', 
+			{
+				bgUrl:'http://fc02.deviantart.net/fs71/f/2013/299/4/0/_stock__mystic_woods_by_dominikaaniola-d2ehxq4.jpg',
+				text:'"Mystic woods" by DominikaAniola',
 				link:'http://dominikaaniola.deviantart.com/art/stock-Mystic-woods-145283836'
 			},
 			{
@@ -65,7 +65,7 @@
 				text:'"Solitude Standing" by Josef Stuefer',
 				link:'http://www.flickr.com/photos/josefstuefer/6802513/'
 			},
-			{			
+			{
 				bgUrl:'http://farm9.staticflickr.com/8480/8177554728_87bca41d35_k.jpg',
 				text:'"White-Pine-Aurora" by Charlie Stinchcomb',
 				link:'http://www.flickr.com/photos/47000103@N05/8177554728'
@@ -75,7 +75,7 @@
 				text:'"Gransasso" by Daniel Zedda',
 				link:'http://www.flickr.com/photos/astragony/9514752555/'
 			},
-			
+
 			{
 				bgUrl:'http://farm6.staticflickr.com/5532/11300754234_dbda5067eb_k.jpg',
 				text:'"Mosaic Highway" by Steve Rengers',
@@ -91,22 +91,22 @@
 				text:'"Old Cars Part 1" by Sean McGrath',
 				link:'http://www.flickr.com/photos/mcgraths/2431583107/'
 			}
-			
+
 		]
-		
+
 		//get background info
 		var randomBgPropId = Math.floor(Math.random() * bgList.length);
 		var bgProps = bgList[randomBgPropId];
-		
+
 		//change body style
 		var body = document.getElementById('page');
 		//if(bgProps.className!=null) body.className = bgProps.className;
 		body.style.backgroundImage = 'url('+bgProps.bgUrl+')';
-		
+
 		//change footer content
 		var footer = document.getElementById('footer');
 		footer.innerHTML = '<a href="'+bgProps.link+'" target="_blank">'+bgProps.text+'</a>';
-		
+
 	})();
 	</script>
   </body>
